@@ -21,11 +21,11 @@ Includes a preview image of the game to give a better idea of its appearance.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/angamadev/Juego_Parejas_JS.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd <your-repo-name>
+   cd Juego_Parejas_JS
    ```
 3. Install dependencies:
    ```bash
@@ -98,11 +98,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author 👨‍💻
 
-Developed by **Your Name**.
+Developed by **Angamdev**.
 
 Feel free to reach out for questions or suggestions:
-- 📧 **Email:** your-email@example.com
-- 🐙 **GitHub:** [your-username](https://github.com/your-username)
+- 📧 **Email:** angamadev@gmail.com
+- 🐙 **GitHub:** [angamadev](https://github.com/angamadev)
 
 ---
 
@@ -129,11 +129,11 @@ Incluye una imagen de vista previa del juego para dar una mejor idea de su apari
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/<tu-usuario>/<tu-repo>.git
+   git clone https://github.com/angamadev/Juego_Parejas_JS.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
-   cd <tu-repo>
+   cd Juego_Parejas_JS
    ```
 3. Instala las dependencias:
    ```bash
@@ -209,5 +209,5 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 Desarrollado por **angamadev**.
 
 No dudes en ponerte en contacto para preguntas o sugerencias:
-- 📧 **Email:** tu-correo@example.com
-- 🐙 **GitHub:** [tu-usuario](https://github.com/tu-usuario)
+- 📧 **Email:** angamadev@gmail.com
+- 🐙 **GitHub:** [angamadev](https://github.com/angamadev)
