@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Juego de adivinar parejas</h1>
+    <p class="explicacion">Juguemos a adivinar las parejas. 
+    </p>
+    <section class="game"></section>
+    <section class="temporizador">
+      <section class="marco">
+        <span class="tiempo" id="tiempo">00:00:00</span>
+        <section class="buttons">
+          <button id="reset"><i class="fas fa-undo-alt"></i></button>
+          <button id="stop"><i class="fas fa-pause"></i></button>
+        </section>
+      </section>
+    </section>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

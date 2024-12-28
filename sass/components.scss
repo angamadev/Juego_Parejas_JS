@@ -1,0 +1,13 @@
+section {
+    gap: 5px;
+}
+div {
+    width : 100px;
+    height: 150px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79, 34, 34, 0.171);
+    margin: 10px;
+    border-radius: 10%;
+}
