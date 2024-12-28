@@ -37,11 +37,9 @@ Includes a preview image of the game to give a better idea of its appearance.
    ```
 5. Open the provided URL in your browser to play the game.
 
-## Code Structure 🛠️
+## Main Functions
 
-### Main Functions
-
-#### `pareja(event)`
+#### `Find Pairs`
 Handles the game logic for matching pairs:
 - Reveals the box's color on click.
 - Checks if two boxes are revealed:
@@ -49,42 +47,12 @@ Handles the game logic for matching pairs:
   - ❌ If they don't match, they reset after 0.5 seconds.
 - Tracks victory condition by checking if all pairs are revealed.
 
-#### `iniciar()`
-Starts the game timer.
+#### `Start`
+Starts the game.
 
-#### `pausar()`
+#### `Pause`
 Pauses the game timer when the game is finished.
 
-### Helper Functions 🔧
-
-- `guardarArrayDivs()`: Saves the current state of the game.
-- Uses imported utilities and variables for handling the game's logic and visual elements.
-
-## Key Variables 🔑
-
-- `colorBlancos`: Default color of the boxes when hidden.
-- `arrayBoxes`: Collection of all boxes in the game grid.
-
-## Example Usage 📋
-
-```javascript
-let arrayBoxes = document.querySelectorAll("div");
-for (let div of arrayBoxes) {
-    div.addEventListener("click", pareja);
-}
-```
-
-## Project Structure 🗂️
-
-```
-.
-├── index.html
-├── style.css
-├── temporizador.js
-├── variables.js
-├── utilsFunctions.js
-└── main.js
-```
 
 ## Future Enhancements 🔮
 
@@ -145,11 +113,9 @@ Incluye una imagen de vista previa del juego para dar una mejor idea de su apari
    ```
 5. Abre la URL proporcionada en tu navegador para jugar.
 
-## Estructura del Código 🛠️
+## Funciones Principales
 
-### Funciones Principales
-
-#### `pareja(event)`
+#### `Busca las Parejas`
 Maneja la lógica del juego para encontrar parejas:
 - Muestra el color de la caja al hacer clic.
 - Verifica si hay dos cajas reveladas:
@@ -157,42 +123,12 @@ Maneja la lógica del juego para encontrar parejas:
   - ❌ Si no coinciden, se reinician después de 0.5 segundos.
 - Verifica la condición de victoria comprobando si todas las parejas están reveladas.
 
-#### `iniciar()`
-Inicia el temporizador del juego.
+#### `Iniciar`
+Inicia el juego desde 0.
 
-#### `pausar()`
+#### `Pausa`
 Pausa el temporizador del juego cuando se termina.
 
-### Funciones Auxiliares 🔧
-
-- `guardarArrayDivs()`: Guarda el estado actual del juego.
-- Utiliza utilidades y variables importadas para manejar la lógica y los elementos visuales del juego.
-
-## Variables Clave 🔑
-
-- `colorBlancos`: Color predeterminado de las cajas cuando están ocultas.
-- `arrayBoxes`: Colección de todas las cajas en la cuadrícula del juego.
-
-## Ejemplo de Uso 📋
-
-```javascript
-let arrayBoxes = document.querySelectorAll("div");
-for (let div of arrayBoxes) {
-    div.addEventListener("click", pareja);
-}
-```
-
-## Estructura del Proyecto 🗂️
-
-```
-.
-├── index.html
-├── style.css
-├── temporizador.js
-├── variables.js
-├── utilsFunctions.js
-└── main.js
-```
 
 ## Mejoras Futuras 🔮
 
