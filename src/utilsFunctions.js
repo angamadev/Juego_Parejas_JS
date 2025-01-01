@@ -46,7 +46,7 @@ function crearTablero() {
     localStorage.setItem("columnas", cols);
     localStorage.setItem("filas", rows);
 }
- 
+
 
 
 // funcion para asignar colores al array de las parejas
@@ -90,8 +90,11 @@ function guardarArrayDivs() {
         arrayParaGuardar.push(div.outerHTML)
     }
     // guardo el tiempo transcurrido hasta entonces
-    let guardarTiempo = document.getElementById("tiempo").innerText;
-    localStorage.setItem("tiempo",guardarTiempo);
+    let tiempoElemento = document.getElementById("tiempo");
+    if (tiempoElemento) {
+        let guardarTiempo = tiempoElemento.innerText;
+        localStorage.setItem("tiempo", guardarTiempo);
+    }
     localStorage.setItem("arrayDivsGuardar",JSON.stringify(arrayParaGuardar));
 }
 
@@ -107,16 +110,20 @@ function recargarAnteriorPartida() {
     let cols = parseInt(localStorage.getItem("columnas"));
     let rows = parseInt(localStorage.getItem("filas"));
 
-    // // Recupero el tiempo de la grabacion y lo añado al span del tiempo
-    // let spanTiempo = document.getElementById("tiempo");
-    // let tiempo = localStorage.getItem("tiempo").split(":");
-    // debugger;
-    // if (localStorage.tiempo != "00:00:00") {
-    //     let H = tiempo[0].padStart(2, '0'); // Convierte la parte de horas a entero
-    //     let M = tiempo[1].padStart(2, '0'); // Convierte la parte de minutos a entero
-    //     let S = tiempo[2].padStart(2, '0'); // Convierte la parte de segundos a entero
-    //     spanTiempo.innerHTML = H + ":" + M + ":" + S
-    // }
+    // Recupero el tiempo de la grabacion y lo añado al span del tiempo
+
+    let spanTiempo = document.getElementById("tiempo");
+    debugger;
+    if (spanTiempo && localStorage.getItem("tiempo")) {
+            let tiempo = localStorage.getItem("tiempo").split(":");
+            let H = tiempo[0].padStart(2, '0'); // Convierte la parte de horas a entero
+            let M = tiempo[1].padStart(2, '0'); // Convierte la parte de minutos a entero
+            let S = tiempo[2].padStart(2, '0'); // Convierte la parte de segundos a entero
+            // spanTiempo.innerHTML = H + ":" + M + ":" + S
+            spanTiempo.innerHTML = `${H}:${M}:${S}`;
+    } else {
+        spanTiempo.innerHTML = "00:00:00"
+    }
 
     // Recorro todo la cuadricula creando el numero de cajas almacenado
     let parejas = cols * rows

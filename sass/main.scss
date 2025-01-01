@@ -1,5 +1,5 @@
-@import url("components.scss");
-@import url("temporizador.scss");
+@use "components";
+@use "temporizador";
 
 h1 {
   color:blue;

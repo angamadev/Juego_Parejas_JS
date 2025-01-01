@@ -1,40 +1,37 @@
-// importo los estilos
+// Importo los estilos
 import "/sass/main.scss";
 
-// importo las funciones mas utiles
+// Importo las funciones más útiles desde utilsFunctions.js
 import { 
     crearTablero,
     recargarAnteriorPartida,
 } from "./utilsFunctions.js";
 
-// importo pareja de los eventos
+// Importo la función pareja desde evento.js
 import {
     pareja
 } from "./evento.js";
 
-// importo la clase Timer
-import Timer from "./funcionTemporizador.js";
-
+// Selecciono todos los elementos div del documento
 let arrayBoxes = document.querySelectorAll("div");
 
-
-// Condicion de si tiene grabada una partida anterior
+// Condición para verificar si hay una partida guardada en localStorage
 if (!localStorage.arrayDivsGuardar) {
-
-    // Pedimos la funcion de crear tablero
+    // Si no hay una partida guardada, crear un nuevo tablero
     crearTablero();
-
-// Si tiene grabada una partida, recargala
 } else {
+    // Si hay una partida guardada, recargarla
     alert("Tiene una partida Iniciada, Continuamos");
     recargarAnteriorPartida();
 }
 
-// Hago bucle para ejecutar cada evento
+// Actualizo la selección de todos los elementos div del documento
 arrayBoxes = document.querySelectorAll("div");
+
+// Bucle para añadir el evento de clic a cada caja que no esté abierta (open != 2)
 for (let div of arrayBoxes) {   
     if (div.dataset.open != 2) {
-    div.addEventListener("click", pareja); 
+        div.addEventListener("click", pareja); 
     }
 }
 
@@ -42,4 +39,3 @@ for (let div of arrayBoxes) {
 export {
     arrayBoxes
 };
-
